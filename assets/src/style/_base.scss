@@ -1,0 +1,102 @@
+// USER VARIABLES SECTION
+
+$poppins: 'Poppins', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+$accent-color: #00cff1;
+$text-color-main: #414040;
+$text-color-secondary: #565656;
+$secondary-color: #24c657;
+
+// MIXINS
+
+@mixin transition {
+    transition: all 0.2s ease-in;
+}
+
+// GENERAL DOCUMENT STYLES
+
+* {
+	box-sizing: border-box;
+
+	&:before,
+	&:after {
+		box-sizing: border-box;
+	}
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $raleway;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	opacity: 1;
+}
+
+.container {
+	max-width: 1210px;
+	padding: 0 20px;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.section-head {
+	h2 {
+		font-family: $poppins;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 48px;
+		margin-bottom: 15px;
+		color: #282828;
+		line-height: 1.4;
+
+		span {
+			color: $accent-color;
+		}
+	}
+}
+
+.text {
+	font-family: $raleway;
+	color: $text-color-secondary;
+	font-size: 15px;
+}
+
+.wrapper {
+	position: relative;
+	overflow-x: hidden;
+}
+
+.fixed {
+	position: fixed;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	-webkit-overflow-scrolling: touch;
+}
+
+.owl-carousel .owl-item img {
+    width: initial;
+}

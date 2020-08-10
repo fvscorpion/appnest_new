@@ -1,0 +1,203 @@
+@media only screen and (max-width : 1366px)
+{
+	.header-image {
+		width: 30%;
+	}
+}
+
+@media only screen and (max-width : 992px)
+{
+	.get {
+        display: none;
+	}
+	
+	.header-text {
+		h1 {
+			font-size: 40px;
+		}
+		.small {
+			font-size: 34px;
+		}
+	}
+
+	.about {
+		padding: 80px 0 30px;
+	}
+
+	.features,
+	.screenshots,
+	.feedback {
+		padding: 80px 0;
+	}
+
+	.pricing {
+		padding-bottom: 80px;
+	}
+
+	.blog {
+		padding: 80px 0 40px;
+	}
+
+	.footer {
+		padding: 80px 0 30px;
+	}
+
+	.overview {
+		text-align: center;
+
+		.store-buttons {
+			text-align: left;
+			margin: 50px auto 0;
+			justify-content: center;
+			.button {
+				margin-bottom: 0px;
+			}
+		}
+	}
+
+	.overview-img {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	.footer {
+		.back-to-top {
+			top: -115px;
+		}
+	}
+}
+
+@media only screen and (max-width : 768px)
+{
+    .toggleMenu {
+		display: block;
+	}
+
+	.menu {
+		display: none;
+	}
+	
+	.header-text {
+		text-align: center;
+		h1 {
+			font-size: 36px;
+		}
+		.small {
+			font-size: 30px;
+		}
+		.text {
+			margin: 0 auto;
+			margin-top: 30px;
+		}
+	}
+
+	.store-buttons {
+		text-align: left;
+		margin: 50px auto 0;
+		justify-content: center;
+	}
+
+	.header-image {
+		display: none;
+	}
+
+	.section-head {
+		h2 {
+			font-size: 30px;
+		}
+	}
+
+	.features {
+		text-align: center;
+		.img-responsive {
+			margin: 0 auto 60px;
+			max-width: 30%;
+		}
+	}
+
+	.features-item__img {
+		margin-top: 40px;
+	}
+
+	.features-item__text {
+		padding-right: 0;
+	}
+
+	.fact-item__number {
+		font-size: 30px;
+	}
+	.fact-item__text {
+		font-size: 20px;
+	}
+
+	.footer {
+		.footer-info {
+			padding-right: 0;
+		}
+
+		h4 {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width : 640px)
+{
+	.header-text {
+		.text {
+			font-size: 16px;
+		}
+    }
+    
+    .screenshots {
+        .screenshots-item {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (max-width : 480px)
+{
+	.owl-theme .owl-dots .owl-dot span {
+		width: 26px;
+	}
+
+	.section-head {
+		h2 {
+			font-size: 26px;
+		}
+	}
+
+	.header-text {
+		h1 {
+			font-size: 30px;
+		}
+		.small {
+			font-size: 24px;
+		}
+		.text {
+			max-width: 100%;
+		}
+	}
+
+	.store-buttons {
+		flex-direction: column-reverse;
+		justify-content: center;
+
+		.button {
+			&:first-child {
+				margin-right: auto;
+				margin-top: 30px;
+			}
+			margin: 0 auto;
+		}
+	}
+
+	.fact-item__number {
+		font-size: 24px;
+	}
+	.fact-item__text {
+		font-size: 17px;
+	}
+}
