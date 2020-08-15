@@ -1,16 +1,18 @@
-@mixin font($fname, $fstyle, $fweight, $furl) {
+@mixin font($fname, $fstyle, $fweight, $furl_woff2, $furl_woff) {
 	@font-face {
 		font-family: $fname;
 		font-style: $fstyle;
 		font-weight: $fweight;
 		font-display: swap;
-		src: local($fname), url($furl) format('woff2');
+		src: local($fname),
+			 url($furl_woff2) format("woff2"),
+        	 url($furl_woff) format("woff");
 	}
 }
 
-@include font('Poppins', normal, 400, '../fonts/poppins-regular-webfont.woff2');
-@include font('Poppins', normal, 600, '../fonts/poppins-semibold-webfont.woff2');
-@include font('Poppins', normal, 700, '../fonts/poppins-bold-webfont.woff2');
-@include font('Raleway', normal, 400, '../fonts/raleway-regular-webfont.woff2');
-@include font('Raleway', normal, 500, '../fonts/raleway-medium-webfont.woff2');
-@include font('Raleway', italic, 500, '../fonts/raleway-mediumitalic-webfont.woff2');
+@include font('Poppins', normal, 400, '../fonts/poppins-regular-webfont.woff2', '../fonts/poppins-regular-webfont.woff');
+@include font('Poppins', normal, 600, '../fonts/poppins-semibold-webfont.woff2', '../fonts/poppins-semibold-webfont.woff');
+@include font('Poppins', normal, 700, '../fonts/poppins-bold-webfont.woff2', '../fonts/poppins-bold-webfont.woff');
+@include font('Raleway', normal, 400, '../fonts/raleway-regular-webfont.woff2', '../fonts/raleway-regular-webfont.woff');
+@include font('Raleway', normal, 500, '../fonts/raleway-medium-webfont.woff2', '../fonts/raleway-medium-webfont.woff');
+@include font('Raleway', italic, 500, '../fonts/raleway-mediumitalic-webfont.woff2', '../fonts/raleway-mediumitalic-webfont.woff');
