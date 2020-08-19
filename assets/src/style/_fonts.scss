@@ -10,9 +10,9 @@
 	}
 }
 
-@include font('Poppins', normal, 400, '../fonts/poppins-regular-webfont.woff2', '../fonts/poppins-regular-webfont.woff');
-@include font('Poppins', normal, 600, '../fonts/poppins-semibold-webfont.woff2', '../fonts/poppins-semibold-webfont.woff');
-@include font('Poppins', normal, 700, '../fonts/poppins-bold-webfont.woff2', '../fonts/poppins-bold-webfont.woff');
-@include font('Raleway', normal, 400, '../fonts/raleway-regular-webfont.woff2', '../fonts/raleway-regular-webfont.woff');
-@include font('Raleway', normal, 500, '../fonts/raleway-medium-webfont.woff2', '../fonts/raleway-medium-webfont.woff');
-@include font('Raleway', italic, 500, '../fonts/raleway-mediumitalic-webfont.woff2', '../fonts/raleway-mediumitalic-webfont.woff');
+@include font('Poppins', normal, 400, '../fonts/poppins-regular.woff2', '../fonts/poppins-regular.woff');
+@include font('Poppins', normal, 600, '../fonts/poppins-semibold.woff2', '../fonts/poppins-semibold.woff');
+@include font('Poppins', normal, 700, '../fonts/poppins-bold.woff2', '../fonts/poppins-bold.woff');
+@include font('Raleway', normal, 400, '../fonts/raleway-regular.woff2', '../fonts/raleway-regular.woff');
+@include font('Raleway', normal, 500, '../fonts/raleway-medium.woff2', '../fonts/raleway-medium.woff');
+@include font('Raleway', italic, 500, '../fonts/raleway-mediumitalic.woff2', '../fonts/raleway-mediumitalic.woff');
