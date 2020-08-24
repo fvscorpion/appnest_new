@@ -285,16 +285,10 @@
             font-size: 9px;
             margin-bottom: 0;
         }
-        
-        &::before {
-            content: url('../img/Apple.svg');
-            vertical-align: middle;
-            margin-right: 10px; 
-        }
-        &:last-child {
-            &::before {
-                content: url('../img/Play_store.svg');
-            }
+
+        i {
+            font-size: 28px;
+            margin-right: 4px;
         }
 
         &:hover {
@@ -366,32 +360,13 @@
     .store-buttons {
         margin-top: 50px;
         .button {
-            padding: 15px 14px;
             color: $text-color-main;
             border-color: $text-color-main;
             margin-bottom: 30px;
 
-            .img-svg {
-                margin-right: 10px;
-                @include transition;
-                path {
-                    fill: $text-color-main !important;
-                }
-            }
-
-            &::before {
-                content: none;
-            }
-
             &:hover {
                 border-color: $secondary-color;
                 color: #fff;
-
-                .img-svg {
-                    path {
-                        fill: #fff !important;
-                    }
-                }
             }
         }        
     }
@@ -656,22 +631,10 @@
             color: #fff;
             border-color: #fff;
 
-            .img-svg {
-                path {
-                    fill: #fff !important;
-                }
-            }
-
             &:hover {
                 color: $secondary-color;
                 background-color: #fff;
                 border-color: #fff;
-
-                .img-svg {
-                    path {
-                        fill: $secondary-color !important;
-                    }
-                }
             }
         }
     }
