@@ -8,9 +8,7 @@ $(function () {
         $('header .hamburger').toggleClass('is-active');
     });
 
-    $(".menu-mobile").on("click", "a", function (event) {
-        //event.preventDefault();
-
+    $(".menu-mobile").on("click", "a", function () {
         $('.menu-mobile').removeClass('menu_active');
         $('.content').removeClass('content_active').removeClass('fixed');
         $('header .hamburger').removeClass('is-active');
@@ -20,9 +18,7 @@ $(function () {
         $('body,html').animate({ scrollTop: top }, 1500);
     });
 
-    $(".menu").on("click", "a", function (event) {
-        //event.preventDefault();
-
+    $(".menu").on("click", "a", function () {
         $('.menu').removeClass('on');
         $('header .hamburger').removeClass('is-active');
 

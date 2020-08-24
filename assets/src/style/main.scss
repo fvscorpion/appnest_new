@@ -270,7 +270,7 @@
         width: 170px;
         align-items: center;
         text-transform: uppercase;
-        padding: 15px;
+        padding: 15px 14px;
         border-radius: 7px;
         line-height: 1;
         letter-spacing: 0.16px;
@@ -366,7 +366,7 @@
     .store-buttons {
         margin-top: 50px;
         .button {
-            padding: 15px;
+            padding: 15px 14px;
             color: $text-color-main;
             border-color: $text-color-main;
             margin-bottom: 30px;
