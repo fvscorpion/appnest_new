@@ -712,9 +712,6 @@
     }
 
     .back-to-top {
-        display: flex;
-        align-content: center;
-        justify-content: center;
         background-color: $secondary-color;
         width: 70px;
         height: 70px;
@@ -729,9 +726,12 @@
             background-color: $accent-color;
         }
 
-        display: -ms-flexbox;
-        -ms-flex-align: center;
-        -ms-flex-pack: center;
+        .arrow {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
     }
 
     .row > div {
